@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Aggregator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>News Aggregator</h1>
+    </header>
+    <section>
+        <input type="text" id="search-query" placeholder="Search news...">
+        <button id="search-button">Search</button>
+    </section>
+    <section id="sources">
+        <h2>Select News Sources</h2>
+        <ul id="popular-sources">
+          <li><input type="checkbox" id="bbc-news" name="sources" value="bbc-news"><label for="bbc-news">BBC News</label></li>
+          <li><input type="checkbox" id="cnn" name="sources" value="cnn"><label for="cnn">CNN</label></li>
+          <li><input type="checkbox" id="the-new-york-times" name="sources" value="the-new-york-times"><label for="the-new-york-times">The New York Times</label></li>
+          <li><input type="checkbox" id="the-washington-post" name="sources" value="the-washington-post"><label for="the-washington-post">The Washington Post</label></li>
+          <!-- Add more popular sources as needed -->
+        </ul>
+        <div id="custom-sources">
+          <h3>Add Custom Sources</h3>
+          <input type="text" id="source-input" placeholder="Enter a news source...">
+          <button id="add-source">Add</button>
+        </div>
+      </section>
+      
+    <div id="news-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+

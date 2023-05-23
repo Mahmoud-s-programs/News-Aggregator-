@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #adc8e6;
+}
+
+header {
+  background-color: #3e68bb;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #fff;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 300px;
+}
+
+button {
+  background-color: #3e68bb;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 20px;
+}
+
+button:hover {
+  background-color: #d33c3c;
+}
+
+#news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.article {
+  background-color: #ffffff;
+  border: 1px solid hsl(0, 2%, 9%);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 350px;
+  max-height: 450px;
+  overflow: hidden;
+  height: 450px;
+  position: relative;
+  transition: transform 0.2s ease-out;
+}
+
+.article:hover {
+  transform: scale(1.1);
+}
+
+.article h2 {
+  font-size: 1rem;
+  margin: 10px;
+  height: 3rem;
+}
+
+.article p {
+  margin: 10px;
+  font-size: 1rem;
+  height: 8rem;
+}
+
+.article img {
+  max-width: 100%;
+  max-height: 200px;
+  margin: 10px;
+  height: 15rem;
+}
+
+.article a {
+  background-color: #0a071c;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px; /* reduce the height of the link */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sources {
+  background-color: #ffffff;
+  border: 1px solid hsl(0, 71%, 99%);
+  margin: 20px;
+  padding: 20px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+#sources h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#popular-sources {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+#popular-sources li {
+  margin-bottom: 10px;
+}
+
+#popular-sources label {
+  margin-left: 5px;
+  font-size: 1rem;
+}
+
+#custom-sources {
+  margin-top: 20px;
+}
+
+#custom-sources h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+#custom-sources input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#custom-sources button {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+}
+  
